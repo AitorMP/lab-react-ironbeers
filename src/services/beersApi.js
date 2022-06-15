@@ -10,3 +10,6 @@ export const listBeers = () => {
     return response.data;
   });
 };
+
+export const loadBeer = (id) =>
+  beersApi.get(`/${id}`).then((response) => response.data);
